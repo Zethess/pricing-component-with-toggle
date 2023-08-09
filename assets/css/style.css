@@ -1,0 +1,39 @@
+.child-configurations-slider{
+    margin-right: 90px;
+}
+.child-configurations-slider input{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+.child-configurations-slider .check{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: rgb(150, 150, 150);
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+    
+}
+.child-configurations-slider input:checked ~ .check{
+    background: var(--gree-background);
+
+}
+.child-configurations-slider .check::before{
+    content: ' ';
+    position: absolute;
+    top: 2px;
+    left: 2.2px;
+    background: var(--blue-color-bg);
+    width: 16px;s
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+.child-configurations-slider input:checked ~ .check::before{
+    transform: translateX(20px);
+}

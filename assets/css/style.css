@@ -1,39 +1,78 @@
-.child-configurations-slider{
-    margin-right: 90px;
+.option-price-slider {
+  margin-bottom: 60px;
 }
-.child-configurations-slider input{
-    -webkit-appearance: none;
-    visibility: hidden;
-    display: none;
+.option-price-slider input {
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
 }
-.child-configurations-slider .check{
-    position: relative;
-    display: block;
-    width: 40px;
-    height: 20px;
-    background: rgb(150, 150, 150);
-    cursor: pointer;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: ease-in 0.5s;
-    
+.option-price-slider input:checked ~ .check {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  opacity: 0.6;
 }
-.child-configurations-slider input:checked ~ .check{
-    background: var(--gree-background);
+.option-price-slider input:checked ~ .check::before {
+  transform: translateX(25px);
+}
+.option-price-slider .check {
+  position: relative;
+  border-radius: 20px;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  height: 30px;
+  width: 55px;
+  transition: ease-in 0.2s;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+}
+.option-price-slider .check::before {
+  content: " ";
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  height: 23px;
+  width: 23px;
+  transition: 0.5s;
+  top: 3.5px;
+  left: 3.8px;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.child-configurations-slider .check::before{
-    content: ' ';
-    position: absolute;
-    top: 2px;
-    left: 2.2px;
-    background: var(--blue-color-bg);
-    width: 16px;s
-    height: 16px;
-    border-radius: 50%;
-    transition: 0.5s;
 
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  max-width: 100%;
+  background: url("../images/bg-top.svg") top -30px right -195px no-repeat;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: hsl(240, 78%, 98%);
 }
-.child-configurations-slider input:checked ~ .check::before{
-    transform: translateX(20px);
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
 }
+.root h1 {
+  color: hsl(233, 13%, 49%);
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 97%;
+}
+
+.child-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

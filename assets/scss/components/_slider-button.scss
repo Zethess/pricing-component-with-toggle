@@ -1,0 +1,28 @@
+
+.option-price-slider{
+    margin-bottom: 60px;
+    input{
+        @include input-default-conf;
+        &:checked ~ .check{
+            background: $linear-gradient-purple;
+            opacity: 0.6;
+            &::before{
+                transform: translateX(25px);
+            }
+        }
+    }
+    .check{
+        @include slider-conf(relative, 20px , $linear-gradient-purple, 30px, 55px, ease-in 0.2s);
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+        &::before{
+            content: ' ';
+            @include slider-conf(absolute, 50% , white, 23px, 23px, 0.5s);
+            top: 3.5px;
+            left: 3.8px;
+        }
+    }
+}
+
+

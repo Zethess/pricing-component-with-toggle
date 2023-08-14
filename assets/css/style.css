@@ -5,6 +5,12 @@ body {
   background: url("../images/bg-top.svg") top -30px right -195px no-repeat;
   background-color: hsl(240, 78%, 98%);
 }
+@media (min-width: 1000px) {
+  body {
+    background: url("../images/bg-top.svg") top 0px right 0px no-repeat, url("../images/bg-bottom.svg") bottom -30px left 0px no-repeat;
+    background-color: hsl(240, 78%, 98%);
+  }
+}
 
 .root {
   display: flex;
@@ -36,7 +42,7 @@ body {
 @media (min-width: 1000px) {
   .card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ancho mínimo de 300px, con expansión */
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     justify-content: center;
     max-width: 1200px; /* Establece el ancho máximo del grid */
   }

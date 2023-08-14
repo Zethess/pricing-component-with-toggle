@@ -3,6 +3,10 @@ body {
     max-width: 100%;
     background: url('../images/bg-top.svg') top -30px right -195px no-repeat;
     background-color: $very-light-grayish-blue;
+    @include respond-to('large'){
+        background: url('../images/bg-top.svg') top 0px right 0px no-repeat, url('../images/bg-bottom.svg') bottom -30px left 0px no-repeat ;
+    background-color: $very-light-grayish-blue; 
+    }
 }
 .root  {
     @include flex-column-center($align-items: center);
@@ -24,7 +28,7 @@ body {
     @include flex-column-center();
     @include respond-to('large'){
        display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ancho mínimo de 300px, con expansión */
+       grid-template-columns: repeat(3, minmax(300px, 1fr));
        justify-content: center;
        max-width: 1200px; /* Establece el ancho máximo del grid */
     }

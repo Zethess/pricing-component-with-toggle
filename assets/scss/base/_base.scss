@@ -1,0 +1,31 @@
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background: url('../images/bg-top.svg') top -30px right -195px no-repeat;
+    background-color: $very-light-grayish-blue;
+}
+.root  {
+    @include flex-column-center($align-items: center);
+    padding: 60px 20px 0px 20px;
+    h1 {
+      color: $grayish-blue;
+      margin-bottom: 40px;
+    }
+}
+.option-slider  {
+    @include flex-column-center(row,center);
+    gap: 30px;
+    margin-bottom: 60px;
+    color: $light-grayish-blue;
+}
+.card  {
+    width: 97%;
+    max-width: 400px;
+    @include flex-column-center();
+    @include respond-to('large'){
+        flex-direction: row;
+        justify-content: center;
+    }
+      
+}
+  

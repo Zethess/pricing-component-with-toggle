@@ -1,42 +1,10 @@
 @charset "UTF-8";
-
-// 1. Configuration and helpers
-@import
-  'abstracts/variables',
-  'abstracts/breakpoints',
-  'abstracts/mixins';
-@import
-  'components/slider-button';
-*{
-  box-sizing: border-box; 
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  font-family: $font-family-montserrat;
-  min-height: 100vh;
-  max-width: 100%;
-  background: url('../images/bg-top.svg') top -30px right -195px no-repeat;
-  font-size: $font-size-15;
-  font-weight: $font-weight-700;
-  background-color: $very-light-grayish-blue;
-}
-
-.root{
-  @include flex-column-center;
-  padding: 60px 20px;
-  h1{
-      color: $grayish-blue;
-      margin-bottom: 40px;
-  }
-}
-.card{
-  width: 97%;
-}
-.child-card{
-
-  @include flex-column-center;
-  background: white;
-  margin-bottom: 20px;
-}
+@import 'abstracts/variables';
+@import 'abstracts/breakpoints';
+@import 'abstracts/mixins';
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'components/slider-button';
+@import 'components/button';
+@import 'components/card';

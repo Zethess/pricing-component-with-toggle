@@ -8,8 +8,15 @@ $linear-gradient-purple:linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63
 //Neutral
 $very-light-grayish-blue: hsl(240, 78%, 98%);
 $light-grayish-blue: hsl(234, 14%, 74%);
+$light-grayish-blue-borders: hsl(234, 14%, 74%,0.4);
 $grayish-blue: hsl(233, 13%, 49%);
 $dark-grayish-blue: hsl(232, 13%, 33%);
+$white: hsl(0, 0%, 100%);
+
+$btn-linear-gradient-purple:linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$btn-color-purple:hsl(236, 42%, 68%);
+$btn-color-white: hsl(0, 0%, 100%);
+$btn-bg-white: hsl(0, 0%, 100%);
 
 //Font size
 $font-size-15: 15px;

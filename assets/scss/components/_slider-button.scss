@@ -1,6 +1,5 @@
 
 .option-price-slider{
-    margin-bottom: 60px;
     input{
         @include input-default-conf;
         &:checked ~ .check{
@@ -22,6 +21,9 @@
             top: 3.5px;
             left: 3.8px;
         }
+    }
+    &:hover{
+        cursor: pointer;
     }
 }
 

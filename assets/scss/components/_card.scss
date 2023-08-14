@@ -1,0 +1,65 @@
+.child-card  {
+    @include flex-column-center($align-items: center);
+
+    @include background-color($white, $grayish-blue);
+    border-radius: 10px;
+    margin-bottom: 35px;
+    padding: 30px;
+}
+.title-child-card  {
+    @include flex-column-center($align-items: center);
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+.paragraph-child-card  {
+    @include flex-column-center(row, center);
+
+    color: $dark-grayish-blue;
+    span  {
+        font-size: 40px;
+    }
+    strong  {
+        font-size: 70px;
+    }
+}
+.description  {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px;
+    border-bottom: 1px solid $light-grayish-blue-borders;
+    li{
+      padding: 20px;
+      border-top: 1px solid $light-grayish-blue-borders;
+    }
+}
+.btn-child-card  {
+    @include btn-card($btn-linear-gradient-purple, $btn-color-white, $btn-color-purple);
+}
+.price-card-container-child-1{
+    @include respond-to('large'){
+        margin: 20px 0px;
+        border-radius: 10px 0px 0px 10px;
+    }
+}
+.price-card-container-child-2{
+    @include respond-to('large'){
+        margin: 0px 0px;
+    }
+}
+.price-card-container-child-3{
+    @include respond-to('large'){
+        margin: 20px 0px;
+        border-radius: 0px 10px 10px 0px;
+
+    }
+}
+.price-card-container-child-2  {
+    @include background-color();
+}
+.price-card-container-child-2-header-price  {
+    color: $white;
+}
+.price-card-container-child-2-btn  {
+    @include btn-card($btn-bg-white, $btn-color-purple, $btn-color-white);
+}

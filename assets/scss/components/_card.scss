@@ -1,6 +1,5 @@
 .child-card  {
     @include flex-column-center($align-items: center);
-
     @include background-color($white, $grayish-blue);
     border-radius: 10px;
     margin-bottom: 35px;
